@@ -1,3 +1,3 @@
-export function testFunction() {
+function testFunction() {
   message('Hello world!');
 }
