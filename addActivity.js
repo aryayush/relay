@@ -29,7 +29,7 @@ function addActivity(action, entry, library) {
   }
 
   // Get the user’s first name and current date / time
-  var user = libByName('Employees').find(user())[0].field('First');
+  // var user = libByName('Employees').find(user())[0].field('First');
   var dateTime = new Date();
 
   // Get the project name if it exists
