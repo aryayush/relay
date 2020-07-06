@@ -1,13 +1,13 @@
-function addActivity(action, entry) {
+function addActivity(action, entry, library) {
   // This code adds a notification about changes in this library to the Activity library
-  var entry = entry();
+  // var entry = entry();
 
   // Define the action here and no change is needed to the rest of the program
   // Choices are 'added', 'deleted' and 'updated'
-  var action = 'updated';
+  // var action = 'updated';
 
   // Choose type over project title if it exists
-  var library = lib().title;
+  // var library = lib().title;
   var type;
   if (
     library == 'Feedback' ||
