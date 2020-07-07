@@ -53,7 +53,8 @@ function sendNotification(description, title) {
         if (currentUser == user) continue;
 
         // Skip them if they don’t have access to current library
-        if (fields[3].value.indexOf(library) != -1) continue;
+        var accessDenied = fields[3].value.join(', ');
+        if (accessDenied.includes(library)) continue;
 
         for (var i = 5; i < fields.length; i++) {
           // Find the library that we are dealing with
